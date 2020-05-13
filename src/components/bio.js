@@ -10,11 +10,12 @@ import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 
 import { rhythm } from "../utils/typography"
+import { FaLinkedin } from "react-icons/fa";
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
-      avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+      avatar: file(absolutePath: { regex: "/iostree-logo.png/" }) {
         childImageSharp {
           fixed(width: 50, height: 50) {
             ...GatsbyImageSharpFixed
@@ -57,10 +58,10 @@ const Bio = () => {
         }}
       />
       <p>
-        Written by <strong>{author.name}</strong> {author.summary}
+        A blog by <strong>{author.name}</strong>, {author.summary}
         {` `}
-        <a href={`https://twitter.com/${social.twitter}`}>
-          You should follow him on Twitter
+        <a style={{boxShadow:0}} href={`http://www.linkedin.com/in/${social.twitter}`} target="_blank"  rel="noopener noreferrer">
+        <FaLinkedin />
         </a>
       </p>
     </div>

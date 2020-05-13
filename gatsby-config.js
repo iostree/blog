@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `iostree`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Sivabalaa`,
+      summary: `iOS Developer.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    description: `All of us do not have equal talent. But , all of us have an equal opportunity to develop our talents." – A.P.J. Abdul Kalam.`,
+    siteUrl: `https://iostree.netlify.com/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `sivabalaa`,
     },
   },
   plugins: [
@@ -60,13 +60,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Iostree Blog`,
+        short_name: `Iostree`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/iostree-logo.png`,
       },
     },
     `gatsby-plugin-react-helmet`,
